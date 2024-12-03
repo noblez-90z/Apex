@@ -3,7 +3,6 @@ import Footer from "./Footer";
 import Hero from "./Hero";
 import Section from "./Section";
 import SectionTwo from "./SectionTwo";
-import BackgroundCarousel from "./try";
 
 const Homepage = () => {
   return (
@@ -13,7 +12,6 @@ const Homepage = () => {
       <SectionTwo />
       <FAQs />
       <Footer />
-      {/* <BackgroundCarousel /> */}
     </div>
   );
 };
