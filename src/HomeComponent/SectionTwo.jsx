@@ -18,18 +18,22 @@ import cl6 from "../assets/person.svg";
 const SectionTwo = () => {
   const deliveries = [
     {
+      id: 1,
       tittle: "Same day delivery",
       text: "For those urgent needs, our same-day delivery service gets your packages to their quickly and reliably.",
     },
     {
+      id: 2,
       tittle: "Scheduled Delivery",
       text: "Choose a delivery date and time that suit you.We offer flexible scheduling to make sure your items arrive when needed.",
     },
     {
+      id: 3,
       tittle: "Contactless Delivery",
       text: "Our contactless delivery option ensures that all deliveries are safe and secure,with no physical interaction required.",
     },
     {
+      id: 4,
       tittle: "Bulk Delivery",
       text: "Perfect for businesses,our multi-stop bulk delivery services optimize routes to handle multiple deliveries efficiently",
     },
@@ -104,10 +108,10 @@ const SectionTwo = () => {
           {deliveries.map((delivery, index) => (
             <div
               key={index}
-              className="rounded-lg px-4  md:h-fit py-2 bg-white mt-4 md:mt-0"
+              className="rounded-lg px-4 h-[250px] md:h-[300px] py-2 bg-white mt-4 md:mt-0"
             >
               <div className="w-12 h-12 my-2 flex justify-center items-center text-white font-medium bg-[#7f7caf] rounded-full">
-                <p className="">{index} </p>
+                <p className="">{delivery.id} </p>
               </div>
               <h2 className="font-semibold text-2xl my-3">
                 {delivery.tittle}{" "}
@@ -125,12 +129,12 @@ const SectionTwo = () => {
             Here are the four steps to becoming a rider with Apex
           </p>
           <nav>
-            <div className=" list-none px-3 md:px-8 mt-5 ">
-              <li className="flex space-x-3  my-3  ">
-                <div className="w-16 h-10 rounded-full p-2    flex justify-center items-center text-white  bg-[#7f7caf] ">
+            <div className=" list-none  mt-5 ">
+              <li className="flex space-x-3  my-3  w-full ">
+                <div className="w-10 h-10  rounded-full p-2    flex justify-center items-center text-white  bg-[#7f7caf] ">
                   <p className="">1</p>
                 </div>
-                <div className="">
+                <div className="flex-1">
                   <h3 className="font-medium">Apply Online</h3>
                   <p className="py-2">
                     Fill out our rider application form on the Apex website,
@@ -141,10 +145,10 @@ const SectionTwo = () => {
               </li>
               <li className="flex space-x-3 my-4">
                 <p className="w-10 h-10 p-2 bg-[#7f7caf] text-white rounded-full  text-center">
-                  <span>2.</span>
+                  <span>2</span>
                 </p>
 
-                <div className="">
+                <div className="flex-1">
                   <h3 className="font-medium">Background and Vehicle check</h3>
                   <p className="py-2">
                     We'll conduct a background check and inspect your vehicle to
@@ -153,11 +157,11 @@ const SectionTwo = () => {
                 </div>
               </li>
               <li className="flex space-x-3 my-4">
-                <p className="w-12 h-10 p-2 bg-[#7f7caf] text-white rounded-full  text-center">
-                  <span>3.</span>
+                <p className="w-10 h-10 p-2 bg-[#7f7caf] text-white rounded-full  text-center">
+                  <span>3</span>
                 </p>
 
-                <div className="">
+                <div className="flex-1">
                   <h3 className="font-medium">Attend Training</h3>
                   <p className="py-2">
                     Open approved, you'll complete a training session covering
@@ -166,10 +170,10 @@ const SectionTwo = () => {
                 </div>
               </li>
               <li className="flex gap-4 my-4">
-                <p className="text-center bg-[#7f7caf] text-white w-14 h-10 p-2 rounded-full">
-                  <span>4.</span>
+                <p className="text-center bg-[#7f7caf] text-white w-10 h-10 p-2 rounded-full">
+                  <span>4</span>
                 </p>
-                <div className="">
+                <div className="flex-1">
                   <h3 className="font-medium">Start Delivering</h3>
                   <p>
                     After training you'll receive your rider gear and be ready
@@ -193,9 +197,12 @@ const SectionTwo = () => {
           <p className="border border-[#ffffff] px-2 w-fit">Testimonials</p>
           <h2 className="font-semibold py-2 text-2xl">What our clients say</h2>
         </div>
-        <div className="md:grid grid-cols-3 gap-5 mt-3 mb-3 ">
+        <div className="md:grid grid-cols-3 gap-5 mt-8 mb-3 ">
           {client.map((cl, index) => (
-            <div key={index} className=" px-3 rounded-lg bg-white">
+            <div
+              key={index}
+              className="py-2 px-3 mt-8 md:mt-0 rounded-lg bg-white"
+            >
               <div className="flex justify-between pt-2 my-2">
                 <div className="flex space-x-1 ">
                   <img src={star} alt="" />
@@ -213,7 +220,7 @@ const SectionTwo = () => {
                 itaque hic laboriosam nobis dolor necessitatibus! Illo.
               </p>
               <div className="flex justify-between mt-5 py-2 ">
-                <div className="flex gap-2 w-fit">
+                <div className="flex gap-4 w-fit">
                   <img src={cl.pics} alt="" />
                   <div className="">
                     <h2 className="font-medium">{cl.name} </h2>

@@ -3,13 +3,21 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/package.svg";
 import menu from "../assets/menu.svg";
 import cancelMenu from "../assets/cancel menu.svg";
+import bg1 from "../assets/apexfront.png";
+import bg2 from "../assets/bikebox.png";
+import bg3 from "../assets/carton.png";
+import bg4 from "../assets/Rectangle.png";
 
 const Hero = () => {
   const images = [
-    "/src/assets/apexfront.png",
-    "/src/assets/bikebox.png",
-    "/src/assets/carton.png",
-    "/src/assets/Rectangle.png",
+    // "../assets/apexfront.png",
+    // "../assets/bikebox.png",
+    bg1,
+    bg2,
+    bg3,
+    bg4,
+    // "/src/assets/carton.png",
+    // "/src/assets/Rectangle.png",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -66,7 +74,7 @@ const Hero = () => {
                 </li>
               </div>
             </nav>
-            <button className="px-5 py-2  font-semibold text-xl bg-[#7f7caf] hover:bg-[#a09cd8] rounded-lg">
+            <button className="px-5 py-2  font-meduim  bg-[#7f7caf] hover:bg-[#a09cd8] rounded-lg">
               Get Started
             </button>
           </div>
@@ -94,7 +102,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-10 right-10 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-10 right-3 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <div
             key={index}
