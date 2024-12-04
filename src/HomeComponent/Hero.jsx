@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react";
 import logo from "../assets/package.svg";
 import menu from "../assets/menu.svg";
 import cancelMenu from "../assets/cancel menu.svg";
-import bg1 from "../assets/apexfront.png";
-import bg2 from "../assets/bikebox.png";
-import bg3 from "../assets/carton.png";
-import bg4 from "../assets/Rectangle.png";
+import bg1 from "/apexfront.png";
+import bg2 from "/bikebox.png";
+import bg3 from "/carton.png";
+import bg4 from "/Rectangle.png";
 
 const Hero = () => {
   const images = [
