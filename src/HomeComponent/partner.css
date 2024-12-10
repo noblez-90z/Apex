@@ -1,0 +1,14 @@
+.slider-container2 {
+  /* display: flex; */
+  animation: slideRightToLeft 25s linear infinite; /* Animation for movement */
+}
+
+/* Keyframes for animation */
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

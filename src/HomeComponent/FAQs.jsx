@@ -39,7 +39,7 @@ const FAQs = () => {
           </p>
           <h2 className="font-semibold text-3xl ">Got any question?</h2>
           <h2 className="font-semibold text-3xl">We've got answers</h2>
-          <p className="font-normal text-base py-4">
+          <p className="font-normal text-base py-4 text-[#252525]">
             Find answers to common questions about our services from tracking
             and delivery options to billing and support.
           </p>
@@ -48,17 +48,17 @@ const FAQs = () => {
           {faqs.map((faq, index) => (
             <div key={index} className=" py-3  rounded-lg my-6 px-2 ">
               <div
-                className="flex justify-between items-center cursor-pointer"
+                className="flex justify-between items-center gap-3 cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
-                <h2 className="font-meduim text-base text-[#041822]">
+                <h2 className="font-semibold text-base text-[#041822] px-3">
                   {faq.question}{" "}
                 </h2>
                 <span>
                   {openIndex === index ? (
-                    <img src={sub} alt="" />
+                    <img src={sub} alt="" className="w-5 h-5" />
                   ) : (
-                    <img src={plus} />
+                    <img src={plus} className="w-5 h-5" />
                   )}{" "}
                 </span>
               </div>

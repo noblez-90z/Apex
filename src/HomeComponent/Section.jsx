@@ -38,10 +38,10 @@ const Section = () => {
               key={index}
               className={`${
                 index == 2 ? "col-span-2 md:col-span-1" : "md:col-span-1" //if using the commented part u won't have to use this className
-              }`}
+              }  px-[10px]`}
             >
               <h2 className="font-semibold text-3xl">{test.tittle} </h2>
-              <span className="md:text-base text-sm font-normal">
+              <span className="md:text-base text-sm font-normal text-[#252525]">
                 {test.text}{" "}
               </span>
             </div>
@@ -68,7 +68,9 @@ const Section = () => {
             >
               <img src={value.pic} alt="" className="py-3" />
               <h2 className="font-semibold text-2xl my-3">{value.tittle} </h2>
-              <p className="text-base  font-normal py-3">{value.text} </p>
+              <p className="text-base  font-normal py-3 text-[#252525]">
+                {value.text}{" "}
+              </p>
             </div>
           ))}
         </div>
@@ -77,17 +79,17 @@ const Section = () => {
         <div className=" flex-1">
           <img src={rectangle} alt="" />
         </div>
-        <div className="flex-1  md:px-10 mt-8 md:mt-0">
-          <p className="border border-[#7f7caf] px-2 w-fit">About Us</p>
+        <div className="flex-1  md:px-10 mt-12 md:mt-0">
+          <p className="border border-[#7f7caf] px-2 w-fit my-3">About Us</p>
           <h2 className="font-medium py-2 text-4xl">Apex Logistics</h2>
-          <p className="text-base font-normal py-3">
+          <p className="text-base font-normal py-3 text-[#252525]">
             At Apex Logistics, we are dedicated to redefining logistics solution
             with efficiency, reliability, and innovation. Specializing in
             end-to-end supply chain management,we deliver a seamless
             experiencewith global reach,serving businesses of all sizes
           </p>
-          <br />
-          <p className="py-3 text-base font-normal">
+
+          <p className="py-3 text-base font-normal text-[#252525]">
             From real-time tracking to flexing delivery options ,our services
             are designed to keep pace with the needs of a dynamic world. Our
             24/7 support team is committed to ensuring that each delivery
@@ -105,13 +107,13 @@ const Section = () => {
         <p className="text-center py-2 px-6 md:px-0 text-base font-normal text-gray-600">
           Get an instant delivery cost estimate by entering the details below
         </p>
-        <div className="px-3 md:w-[60%] grid md:grid-cols-2 gap-4 mx-auto mt-6">
+        <div className="px-3 md:w-[60%] grid md:grid-cols-2 gap-4 mx-auto mt-6 text-[#252525]">
           <div className="">
             <label htmlFor="">Enter pickup location</label>
             <input
               type="text"
               placeholder="E.g City or State"
-              className=" w-full py-2 rounded-lg px-2 my-2 outline-none"
+              className=" w-full py-2 rounded-lg px-2 my-2 outline-none focus:border border-blue-500"
             />
           </div>
           <div className="">
@@ -119,7 +121,7 @@ const Section = () => {
             <input
               type="text"
               placeholder="E.g City or State"
-              className=" w-full py-2 rounded-lg px-2 my-2 outline-none"
+              className=" w-full py-2 rounded-lg px-2 my-2 outline-none focus:border border-blue-500"
             />
           </div>
           <div className="">
@@ -127,19 +129,24 @@ const Section = () => {
             <input
               type="text"
               placeholder="E.g., 5 ibs or 2.3kg"
-              className=" w-full py-2 rounded-lg px-2 my-2 outline-none"
+              className=" w-full py-2 rounded-lg px-2 my-2 outline-none focus:border border-blue-500"
             />
           </div>
 
           <div className="">
             <label htmlFor="">Delivery Speed</label>
-            <input
-              type="text"
-              placeholder="Select speed option"
-              className=" w-full py-2 rounded-lg px-2 my-2 outline-none"
-            />
+            <div className="relative">
+              <select
+                placeholder="Select speed option"
+                className=" w-full   py-2 rounded-lg px-2 placeholder:border-2   text-sm my-2 outline-none"
+              >
+                <option value="normal ">normal</option>
+                <option value="fast">fast </option>
+                <option value="quick">2x fast</option>
+              </select>
+            </div>
           </div>
-          <div className="">
+          <div className="w-full">
             <input
               type="checkbox"
               name=""
@@ -149,7 +156,7 @@ const Section = () => {
             <label htmlFor="">Do you need special handling</label>
           </div>
         </div>
-        <button className="w-[50%] bg-[#7f7caf] hover:bg-[#a09cd8] font-meduim text-base text-white mt-6 py-2 block mx-auto border text-center rounded-lg">
+        <button className="w-[93%] md:w-[50%] bg-[#7f7caf] hover:bg-[#a09cd8] font-meduim text-base text-white mt-6 py-2 block mx-auto border text-center rounded-lg">
           Get Quotation
         </button>
       </div>

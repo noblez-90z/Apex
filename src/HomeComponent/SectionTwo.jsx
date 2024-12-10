@@ -14,6 +14,10 @@ import cl3 from "../assets/Ellipse 1 (2).png";
 import cl4 from "../assets/Ellipse 1 (3).png";
 import cl5 from "../assets/Ellipse 1 (4).png";
 import cl6 from "../assets/person.svg";
+import React, { useState, useEffect } from "react";
+
+import "../index.css";
+import Partner from "./Partner";
 
 const SectionTwo = () => {
   const deliveries = [
@@ -81,25 +85,33 @@ const SectionTwo = () => {
     { pics: company6 },
   ];
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Function to handle switching to the next image
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === patners.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  useEffect(() => {
+    const timer = setInterval(nextImage, 3000); // Change image every 3 seconds
+    return () => clearInterval(timer); // Cleanup function to clear the timer
+  }, [nextImage]); // Runs once when component mounts
+
   return (
     <div className="">
-      <div className="my-6">
+      <div className="my-6 overflow-hidden">
         <h2 className="text-center text-2xl text-[#636262] py-3">
           Our partners
         </h2>
-        <div className="flex justify-between gap-1 px-6">
-          {patners.map((patner, index) => (
-            <div className="" key={index}>
-              <img src={patner.pics} alt="" />
-            </div>
-          ))}
-        </div>
+
+        <Partner />
       </div>
       <div className="md:flex justify-center gap-20 px-6 md:px-16 bg-[#7f7caf] md:h-fit py-5">
         <div className="text-[#ffffff] py-6">
           <p className="border border-[#ffffff] px-2 w-fit">Our Services</p>
           <h2 className="font-semibold py-2 text-3xl">Why choose us</h2>
-          <p className="text-base py-3">
+          <p className="text-base py-3 ">
             Our team is here to make delivery simple, convenient, and reliable ,
             no app required
           </p>
@@ -108,7 +120,7 @@ const SectionTwo = () => {
           {deliveries.map((delivery, index) => (
             <div
               key={index}
-              className="rounded-lg px-4 h-[250px] md:h-[300px] py-2 bg-white mt-4 md:mt-0"
+              className="rounded-lg px-4 h-[250px] md:h-[300px] py-2 bg-white mt-6 md:mt-0"
             >
               <div className="w-12 h-12 my-2 flex justify-center items-center text-white font-medium bg-[#7f7caf] rounded-full">
                 <p className="">{delivery.id} </p>
@@ -116,16 +128,18 @@ const SectionTwo = () => {
               <h2 className="font-semibold text-2xl my-3">
                 {delivery.tittle}{" "}
               </h2>
-              <p className="text-base font-normal">{delivery.text} </p>
+              <p className="text-base font-normal text-[#252525]">
+                {delivery.text}{" "}
+              </p>
             </div>
           ))}
         </div>
       </div>
-      <div className="md:flex justify-between gap-6  items-center md:px-16 px-6 my-16">
-        <div className="flex-1 mx-4">
+      <div className="md:flex justify-between gap-6  items-center px-6 md:px-16  my-16">
+        <div className="flex-1 ">
           <p className="border border-[#7f7caf] px-4 w-fit">Join Us</p>
           <h2 className="font-meduim py-2 text-3xl">Become a rider</h2>
-          <p className="text-base py-3">
+          <p className="text-base py-3 text-[#252525]">
             Here are the four steps to becoming a rider with Apex
           </p>
           <nav>
@@ -135,8 +149,8 @@ const SectionTwo = () => {
                   <p className="">1</p>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-medium">Apply Online</h3>
-                  <p className="py-2">
+                  <h3 className="font-bold">Apply Online</h3>
+                  <p className="py-2 text-[#252525]">
                     Fill out our rider application form on the Apex website,
                     providing your basic information,contact details, and any
                     relevant experience.
@@ -149,8 +163,8 @@ const SectionTwo = () => {
                 </p>
 
                 <div className="flex-1">
-                  <h3 className="font-medium">Background and Vehicle check</h3>
-                  <p className="py-2">
+                  <h3 className="font-bold">Background and Vehicle check</h3>
+                  <p className="py-2 text-[#252525]">
                     We'll conduct a background check and inspect your vehicle to
                     meet our standard.
                   </p>
@@ -162,8 +176,8 @@ const SectionTwo = () => {
                 </p>
 
                 <div className="flex-1">
-                  <h3 className="font-medium">Attend Training</h3>
-                  <p className="py-2">
+                  <h3 className="font-bold">Attend Training</h3>
+                  <p className="py-2 text-[#252525]">
                     Open approved, you'll complete a training session covering
                     our delivery process,customer service expectations.
                   </p>
@@ -174,8 +188,8 @@ const SectionTwo = () => {
                   <span>4</span>
                 </p>
                 <div className="flex-1">
-                  <h3 className="font-medium">Start Delivering</h3>
-                  <p>
+                  <h3 className="font-bold">Start Delivering</h3>
+                  <p className="text-[#252525]">
                     After training you'll receive your rider gear and be ready
                     to hit the road! Log into our app, accept orders and start
                     delivering.
@@ -188,11 +202,11 @@ const SectionTwo = () => {
             Join team
           </button>
         </div>
-        <div className="flex-1 text-right mt-5 md:mt-0">
+        <div className="flex-1 text-right mt-16 md:mt-0 ">
           <img src={bikebox} alt="" className="w-[450px] block mx-auto" />
         </div>
       </div>
-      <div className="my-10 px-6 md:px-16 bg-[#7f7caf] py-6">
+      <div className="my-15 px-6 md:px-16 bg-[#7f7caf] py-6">
         <div className="py-3 text-white">
           <p className="border border-[#ffffff] px-2 w-fit">Testimonials</p>
           <h2 className="font-semibold py-2 text-2xl">What our clients say</h2>
@@ -213,7 +227,7 @@ const SectionTwo = () => {
                 </div>
                 <span className="font-light"> 1 day</span>
               </div>
-              <p className="text-base font-normal py-3 pr-3">
+              <p className="text-base font-normal py-3 pr-3 text-[#252525]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                 minima perspiciatis repellat voluptatibus expedita labore,
                 reprehenderit magnam? Esse ut sunt maxime fugit repellendus
@@ -221,7 +235,7 @@ const SectionTwo = () => {
               </p>
               <div className="flex justify-between mt-5 py-2 ">
                 <div className="flex gap-4 w-fit">
-                  <img src={cl.pics} alt="" />
+                  <img src={cl.pics} alt="" className="w-10 h-10" />
                   <div className="">
                     <h2 className="font-medium">{cl.name} </h2>
                     <p className="capitalize">google</p>

@@ -14,14 +14,14 @@ const Footer = () => {
             <img src={logo} alt="logo" />
             <h2 className="text-2xl font-semibold   ">Apex</h2>
           </div>
-          <p className="py-3 pr-5">
+          <p className="py-3 pr-5 text-[#252525]">
             Join thousands of businesses and individuals who trust Apex for
             their logistics needs and experience the difference of
             efficient,dependable service.
           </p>
           <div className="my-5">
-            <h3 className="font-semibold">Subscribe to our newsletter</h3>
-            <div className="border md:w-[60%]  flex rounded-lg py-1 px-1">
+            <h3 className="font-semibold my-3">Subscribe to our newsletter</h3>
+            <div className="border md:w-[60%]  flex rounded-lg py-1 px-1 my-3">
               <input
                 type="text"
                 placeholder="Enter email address"
@@ -36,18 +36,18 @@ const Footer = () => {
         <div className="md:flex justify-around  mt-4 md:mt-0 flex-1 ">
           <div className="">
             <h3 className="py-3">
-              <Link className="text-[#636262] text-xl">Home</Link>
+              <Link className="text-[#7f7caf] text-xl">Home</Link>
             </h3>
             <nav>
-              <div className="list-none">
+              <div className="list-none text-[#252525]">
                 <li className="py-3">
-                  <Link>About</Link>
+                  <Link className="text-[#252525]">About</Link>
                 </li>
                 <li className="py-2 md:py-3">
-                  <Link>Pricing</Link>
+                  <Link className="text-[#252525]">Pricing</Link>
                 </li>
                 <li className="py-2 md:py-3">
-                  <Link>Services</Link>
+                  <Link className="text-[#252525]">Services</Link>
                 </li>
               </div>
             </nav>
@@ -55,31 +55,31 @@ const Footer = () => {
 
           <div className="mt-2 md:mt-0">
             <h3 className="py-3">
-              <Link className="text-[#636262] text-xl">Resources</Link>
+              <Link className="text-[#7f7caf] text-xl">Resources</Link>
             </h3>
             <nav>
               <div className="list-none">
                 <li className="py-2 md:py-3">
-                  <Link>FAQs</Link>
+                  <Link className="text-[#252525]">FAQs</Link>
                 </li>
                 <li className="py-2 md:py-3">
-                  <Link>Blogs</Link>
+                  <Link className="text-[#252525]">Blogs</Link>
                 </li>
                 <li className="py-2 md:py-3">
-                  <Link>Press</Link>
+                  <Link className="text-[#252525]">Press</Link>
                 </li>
               </div>
             </nav>
           </div>
           <div className="mt-2 md:mt-0">
             <h3 className="py-3">
-              <Link className="text-[#636262] text-xl">Company</Link>
+              <Link className="text-[#7f7caf] text-xl">Company</Link>
             </h3>
             <nav>
               <div className="list-none">
                 <li className="py-2 md:py-3 flex gap-2">
                   <Link className="pt-2">Careers</Link>
-                  <p className="rounded-md  px-2  bg-[#7f7caf] text-center text-white">
+                  <p className="rounded-md pt-1 px-2  bg-[#7f7caf] text-center text-white">
                     Hiring
                   </p>
                 </li>

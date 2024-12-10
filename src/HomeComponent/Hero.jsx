@@ -81,7 +81,7 @@ const Hero = () => {
         </div>
         <div className=" flex justify-center items-center h-[400px] ">
           <div className="px-6 md:px-16 md:w-[50%]">
-            <h1 className="font-bold md:text-5xl py-2 text-center">
+            <h1 className="font-bold text-2xl md:text-5xl py-2 text-center">
               The Logistics Company you can trust to Deliver
             </h1>
             <p className="font-normal text-base text-center py-4">
@@ -120,7 +120,7 @@ const Hero = () => {
           }}
           className="w-full top-14 right-0 h-svh flex md:hidden  fixed inset-y-0 bg-black bg-opacity-50 z-40"
         >
-          <div className="bg-[#4b8bbe]  fixed inset-y-0 top-[55px] right-0 h-[50%] w-full  z-50 shadow-lg overflow-y-auto">
+          <div className="bg-[#ffff] text-[#252525] text-center  fixed inset-y-0 top-[55px] right-0 h-[50%] w-full  z-50 shadow-lg overflow-y-auto">
             <div className="block  flex-1 pt-5 pb-4 px-6 ">
               <div>
                 <nav>
@@ -142,7 +142,7 @@ const Hero = () => {
                     </li>
                   </div>
                 </nav>
-                <button className="px-5 py-2 mt-5  font-semibold text-xl bg-[#7f7caf] hover:bg-[#a09cd8] rounded-lg">
+                <button className="px-5 py-2 mt-5  font-meduim text-white text-xl bg-[#7f7caf] hover:bg-[#a09cd8] rounded-lg">
                   Get Started
                 </button>
               </div>
