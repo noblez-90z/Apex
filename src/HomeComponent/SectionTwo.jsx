@@ -149,7 +149,7 @@ const SectionTwo = () => {
                   <p className="">1</p>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-bold">Apply Online</h3>
+                  <h3 className="font-bold text-xl">Apply Online</h3>
                   <p className="py-2 text-[#252525]">
                     Fill out our rider application form on the Apex website,
                     providing your basic information,contact details, and any
@@ -163,7 +163,9 @@ const SectionTwo = () => {
                 </p>
 
                 <div className="flex-1">
-                  <h3 className="font-bold">Background and Vehicle check</h3>
+                  <h3 className="font-bold text-xl">
+                    Background and Vehicle check
+                  </h3>
                   <p className="py-2 text-[#252525]">
                     We'll conduct a background check and inspect your vehicle to
                     meet our standard.
@@ -176,7 +178,7 @@ const SectionTwo = () => {
                 </p>
 
                 <div className="flex-1">
-                  <h3 className="font-bold">Attend Training</h3>
+                  <h3 className="font-bold text-xl">Attend Training</h3>
                   <p className="py-2 text-[#252525]">
                     Open approved, you'll complete a training session covering
                     our delivery process,customer service expectations.
@@ -188,7 +190,7 @@ const SectionTwo = () => {
                   <span>4</span>
                 </p>
                 <div className="flex-1">
-                  <h3 className="font-bold">Start Delivering</h3>
+                  <h3 className="font-bold text-xl">Start Delivering</h3>
                   <p className="text-[#252525]">
                     After training you'll receive your rider gear and be ready
                     to hit the road! Log into our app, accept orders and start
@@ -225,7 +227,7 @@ const SectionTwo = () => {
                   <img src={star} alt="" />
                   <img src={star} alt="" />
                 </div>
-                <span className="font-light"> 1 day</span>
+                <span className="font-light text-[#757575]"> 1 day</span>
               </div>
               <p className="text-base font-normal py-3 pr-3 text-[#252525]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
@@ -237,8 +239,8 @@ const SectionTwo = () => {
                 <div className="flex gap-4 w-fit">
                   <img src={cl.pics} alt="" className="w-10 h-10" />
                   <div className="">
-                    <h2 className="font-medium">{cl.name} </h2>
-                    <p className="capitalize">google</p>
+                    <h2 className="font-medium text-[#252525]">{cl.name} </h2>
+                    <p className="capitalize text-[#757575]">google</p>
                   </div>
                 </div>
                 <p className="text-3xl font-bold">&#x201f;</p>

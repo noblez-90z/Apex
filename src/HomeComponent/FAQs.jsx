@@ -34,12 +34,16 @@ const FAQs = () => {
     <div className="px-6 md:px-16 ">
       <div className="md:flex gap-32 mt-20 ">
         <div className=" md:w-[40%] h-fit">
-          <p className="border border-purple-400 text-purple-400 w-fit px-4  my-3">
+          <p className="border border-purple-400 text-[#252525] w-fit px-4  my-3">
             FAQs
           </p>
-          <h2 className="font-semibold text-3xl ">Got any question?</h2>
-          <h2 className="font-semibold text-3xl">We've got answers</h2>
-          <p className="font-normal text-base py-4 text-[#252525]">
+          <h2 className="font-semibold text-3xl text-[#252525]">
+            Got any question?
+          </h2>
+          <h2 className="font-semibold text-3xl text-[#252525]">
+            We've got answers
+          </h2>
+          <p className="font-normal text-base py-4 text-[#757575] leading-tight">
             Find answers to common questions about our services from tracking
             and delivery options to billing and support.
           </p>
@@ -51,7 +55,7 @@ const FAQs = () => {
                 className="flex justify-between items-center gap-3 cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
-                <h2 className="font-semibold text-base text-[#041822] px-3">
+                <h2 className="font-semibold text-base text-[#252525] px-3">
                   {faq.question}{" "}
                 </h2>
                 <span>
@@ -63,7 +67,9 @@ const FAQs = () => {
                 </span>
               </div>
               {openIndex === index && (
-                <p className="text-[12px] text-[#59676e] py-2">{faq.answer} </p>
+                <p className="text-[12px] text-[#757575] py-2 px-3">
+                  {faq.answer}{" "}
+                </p>
               )}
             </div>
           ))}

@@ -104,7 +104,7 @@ const Section = () => {
         <h2 className="text-center font-medium md:text-3xl text-xl ">
           Delivery Cost Estimator
         </h2>
-        <p className="text-center py-2 px-6 md:px-0 text-base font-normal text-gray-600">
+        <p className="text-center py-2 px-6 md:px-0 text-base font-normal text-[#757575]">
           Get an instant delivery cost estimate by entering the details below
         </p>
         <div className="px-3 md:w-[60%] grid md:grid-cols-2 gap-4 mx-auto mt-6 text-[#252525]">
