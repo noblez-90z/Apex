@@ -34,7 +34,7 @@ const FAQs = () => {
     <div className="px-6 md:px-16 ">
       <div className="md:flex gap-32 mt-20 ">
         <div className=" md:w-[40%] h-fit">
-          <p className="border border-purple-400 text-[#252525] w-fit px-4  my-3">
+          <p className="border border-purple-400 text-[#7f7caf] w-fit px-4  my-3">
             FAQs
           </p>
           <h2 className="font-semibold text-3xl text-[#252525]">

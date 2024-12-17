@@ -40,8 +40,10 @@ const Section = () => {
                 index == 2 ? "col-span-2 md:col-span-1" : "md:col-span-1" //if using the commented part u won't have to use this className
               }  px-[10px]`}
             >
-              <h2 className="font-semibold text-3xl">{test.tittle} </h2>
-              <span className="md:text-base text-sm font-normal text-[#252525]">
+              <h2 className="font-semibold text-3xl text-[#252525]">
+                {test.tittle}{" "}
+              </h2>
+              <span className="md:text-base text-sm font-normal text-[#757575]">
                 {test.text}{" "}
               </span>
             </div>
@@ -53,11 +55,11 @@ const Section = () => {
         </div> */}
       </div>
       <div className="text-left md:text-center my-5 py-5">
-        <p className=" border border-[#7f7caf] my-3  px-3 w-fit md:mx-auto">
+        <p className=" border border-[#7f7caf] text-[#7f7caf]  my-3  px-3 w-fit md:mx-auto">
           Core Commitments
         </p>
         <h2 className="font-semibold py-2 text-3xl">Values that define us</h2>
-        <span className="text-base">
+        <span className="text-base text-[#757575]">
           Our values are the foundation of everything we do
         </span>
         <div className="md:flex justify-around gap-6 items-center mt-12  ">
@@ -80,7 +82,9 @@ const Section = () => {
           <img src={rectangle} alt="" />
         </div>
         <div className="flex-1  md:px-10 mt-12 md:mt-0">
-          <p className="border border-[#7f7caf] px-2 w-fit my-3">About Us</p>
+          <p className="border border-[#7f7caf] text-[#7f7caf] px-2 w-fit my-3">
+            About Us
+          </p>
           <h2 className="font-medium py-2 text-4xl">Apex Logistics</h2>
           <p className="text-base font-normal py-3 text-[#252525]">
             At Apex Logistics, we are dedicated to redefining logistics solution
@@ -135,10 +139,10 @@ const Section = () => {
 
           <div className="">
             <label htmlFor="">Delivery Speed</label>
-            <div className="relative">
+            <div className="relative ">
               <select
                 placeholder="Select speed option"
-                className=" w-full   py-2 rounded-lg px-2 placeholder:border-2   text-sm my-2 outline-none"
+                className=" w-full   py-2 rounded-lg px-2 h-10 bg-white   text-sm my-2 outline-none"
               >
                 <option value="normal ">normal</option>
                 <option value="fast">fast </option>

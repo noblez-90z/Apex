@@ -144,7 +144,7 @@ const SectionTwo = () => {
           </p>
           <nav>
             <div className=" list-none  mt-5 ">
-              <li className="flex space-x-3  my-3  w-full ">
+              <li className="flex space-x-3  my-6  w-full ">
                 <div className="w-10 h-10  rounded-full p-2    flex justify-center items-center text-white  bg-[#7f7caf] ">
                   <p className="">1</p>
                 </div>
@@ -157,7 +157,7 @@ const SectionTwo = () => {
                   </p>
                 </div>
               </li>
-              <li className="flex space-x-3 my-4">
+              <li className="flex space-x-3 my-8">
                 <p className="w-10 h-10 p-2 bg-[#7f7caf] text-white rounded-full  text-center">
                   <span>2</span>
                 </p>
@@ -172,7 +172,7 @@ const SectionTwo = () => {
                   </p>
                 </div>
               </li>
-              <li className="flex space-x-3 my-4">
+              <li className="flex space-x-3 my-8">
                 <p className="w-10 h-10 p-2 bg-[#7f7caf] text-white rounded-full  text-center">
                   <span>3</span>
                 </p>
@@ -185,7 +185,7 @@ const SectionTwo = () => {
                   </p>
                 </div>
               </li>
-              <li className="flex gap-4 my-4">
+              <li className="flex gap-4 my-8">
                 <p className="text-center bg-[#7f7caf] text-white w-10 h-10 p-2 rounded-full">
                   <span>4</span>
                 </p>
@@ -236,9 +236,9 @@ const SectionTwo = () => {
                 itaque hic laboriosam nobis dolor necessitatibus! Illo.
               </p>
               <div className="flex justify-between mt-5 py-2 ">
-                <div className="flex gap-4 w-fit">
+                <div className="flex items-center gap-4 w-fit">
                   <img src={cl.pics} alt="" className="w-10 h-10" />
-                  <div className="">
+                  <div className="leading-tight">
                     <h2 className="font-medium text-[#252525]">{cl.name} </h2>
                     <p className="capitalize text-[#757575]">google</p>
                   </div>

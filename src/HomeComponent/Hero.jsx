@@ -80,7 +80,7 @@ const Hero = () => {
           </div>
         </div>
         <div className=" flex justify-center items-center h-[400px] ">
-          <div className="px-6 md:px-16 md:w-[50%]">
+          <div className="px-6 md:px-16 md:w-[65%]">
             <h1 className="font-bold text-2xl md:text-5xl py-2 text-center">
               The Logistics Company you can trust to Deliver
             </h1>
